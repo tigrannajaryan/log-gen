@@ -81,6 +81,7 @@ loop:
 	}
 
 	sinceStart := time.Now().Sub(startTime)
+
 	logger.Info(fmt.Sprintf("Generated for %.2f sec, Printed total %v lines, %.1f per second",
 		sinceStart.Seconds(), generatedLineCount, float64(generatedLineCount)/sinceStart.Seconds()))
 }
